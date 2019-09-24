@@ -1,9 +1,9 @@
 @font-face 
  font-family: "MyriadProRegular"
- src: url("../fonts/MyriadProRegular/MyriadProRegular.eot")
- src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
- url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
- url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype")
+ src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot")
+ src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype")
+ src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff")
+ src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype")
  font-style: normal
  font-weight: normal
 
@@ -13,9 +13,11 @@ img
 body
 	font-family: "MyriadProRegular"
 
+* 
+ box-sizing: border-box
+ outline: none
 
 .container
-	border: 1px solid red
 	max-width: 1114px
 	padding: 308px 0 0 0 
 	min-height: 1290px
@@ -31,14 +33,12 @@ body
 	 color: #b0b0b0
 	 margin-bottom: 60px
 	&-reg
-	 border: 1px solid red
 	 margin-right: -15px
 	 &-header
 	  background-color: #34b7ce
 	  padding: 22px 0
 	  border-radius: 10px 10px 0 0
 	  justify-content: center
-	  border: 1px solid red
 	 &__logo
 	  text-align: center
 	 &__title
@@ -48,38 +48,187 @@ body
 	 &__input
 	  display: block 
 	  width: 100%
+	  max-width: 360px
 	  border-radius: 10px
 	  border: 1px solid #dcdcdc
-	  padding: 20px 20px 26px 55px
+	  padding: 26px 20px 26px 55px
 	  margin-bottom: 33px
+	  &-symbol
+	   position: absolute
+	   top: 17px
+	   right: 19px
+	  &-wrap 
+	   width: 100%
+	   max-width: 360px
+	   position: relative
+	  &--small
+	   max-height: 52px
   &-body
    padding-bottom: 32px
 	  background-color: #f5f5f5
+	  border-radius: 0 0 10px 10px
+	  border: 1px solid #cecece
+   border-top: 0
 	  input
+	   color: #858585
 		  &::-webkit-input-placeholder
 				 font-size: 22px
-				 color: #ececec
+				 color: #E9E9E9
 			 &::-moz-placeholder
 				 font-size: 22px
-				 color: #ececec
+				 color: #e9e9e9
 				&:-ms-input-placeholder
 				 font-size: 22px
-				 color: #ececec
+				 color: #e9e9e9
 				&:-moz-placeholder
 				 font-size: 22px
 				 color: #ececec
  &-login
-  padding: 30px 28px 0
+  margin: 0
+  padding: 30px 38px 0
   border-right: 1px solid #e7e7e7
   &__image
    margin-top: 45px
  &-newreg
+  margin: 0
+  padding: 0 38px
   &__title
    padding-top: 34px
    font-size: 20px
    color: #9b9b9b
+  &__subtitle
+   display: block
+   margin-bottom: 6px
+   font-size: 16px
+   color: #a1a1a1
+ &-checkbox
+  &:hover
+   .checkbox__label-hover
+	   display: block
+  &__input
+   position: absolute
+	  opacity: 0
+	  cursor: pointer
+	  height: 0
+	  width: 0
+   &-wrap
+		  display: block
+		  width: 20px
+		  height: 20px
+		  position: relative
+		  cursor: pointer
+		  font-size: 22px
+		  user-select: none
+		  &:hover
+		   .form-checkbox__checkmark
+		    background-color: #CCCCCC
+		&__checkmark
+		 border-radius: 5px
+			position: absolute
+	  top: 0
+	  left: 0
+	  height: 20px
+	  width: 20px
+	  background-color: #e1e1e1
+	  transition: all 0.4s ease
+	  &:hover
+		  .form-checkbox__checkmark:after
+		   display: block
+	  &:after 
+	   content: ''
+    position: absolute
+    display: none
+    left: 8px
+		  top: 5px
+		  width: 5px
+		  height: 10px
+		  border: solid #000
+		  border-width: 0 3px 3px 0
+		  transform: rotate(45deg)
+	&__button
+	 color: #fff 
+	 border-radius: 10px 
+	 font-size: 22px
+	 padding: 10px 40px
+	 border: 1px solid transparent
+	 outline: none
+	 transition: all 0.4s ease
+	 display: block
+	 &--blue
+	  background-image: linear-gradient(to bottom right, #004c6c, #4fb6e2)
+	  &:hover
+    background-image: linear-gradient(to bottom right, #4fb6e2, #004c6c)
+		&--yellow
+   background-image: linear-gradient(to bottom right, #aa7800, #ffb400)
+   &:hover
+    background-image: linear-gradient(to bottom right, #ffb400, #aa7800)
 
-	  
+.checkbox
+	&-wrap
+	 display: block
+	 position: relative
+	 cursor: pointer
+	 font-size: 22px
+	 user-select: none
+	 margin-left: -15px
+	 .checkbox__checkmark:after 
+		 left: 8px
+		 top: 5px
+		 width: 5px
+		 height: 10px
+		 border: solid #716A6A
+		 border-width: 0 3px 3px 0
+		 transform: rotate(45deg)
+	 input 
+   position: absolute
+		 opacity: 0
+		 height: 0
+		 width: 0
+  input:checked ~ .checkbox__checkmark:after 
+   display: block
+		&:hover
+		 input ~ .checkbox__checkmark 
+		  background-color: #ccc
+	&__checkmark
+	 position: absolute
+	 top: 0
+	 left: 0
+	 cursor: pointer
+	 height: 20px
+	 width: 20px
+	 background-color: #e1e1e1
+	 border-radius: 5px
+	 transition: all 0.3s ease
+ 	&:after 
+		 content: ''
+		 position: absolute
+		 display: none
+	&__label
+	 display: block
+	 font-size: 13px
+	 color: #cbcbcb
+	 word-wrap: nowrap
+	 margin-bottom: -7px
+	 position: relative
+	 cursor: pointer
+	 &-hover
+	  max-width: 260px
+	  display: none
+	  position: absolute
+	  top: 40px
+	  left: -160px
+	  padding: 15px 18px
+	  background-color: #fff
+	  border-radius: 10px
+	  &__text
+	   font-size: 14px
+	   color: #cbcbcb
+	
+	   
+
+		
+
+
 
 
 
