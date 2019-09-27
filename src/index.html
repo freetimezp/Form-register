@@ -11,14 +11,18 @@
 <!-- main CSS -->
 <link rel="stylesheet" href="css/style.min.css">
 
+<!-- font  -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+
 <title>Form-reg</title>
 </head>
 <body>
 	
 <section class="s-form">
 	<div class="container">
-		<div class="row no-gutters ">
-			<div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12 m-auto text-right">
+		<div class="row no-gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right">
 				<h1 class="form-title">
    		Login To Your Account / Register New
 	   </h1>
@@ -28,10 +32,10 @@
 		</div>
 		<!-- /.row -->
 		<div class="row  no-gutters">
-			<div class="col-xl-9 col-lg-9 col-md-10 col-sm-11 col-11 m-auto">
-		  <div class="form-reg">
+			<div class="col-xl-12 col-lg-12 col-md-11 col-sm-11 col-11 m-auto">
+		  <div class="form-reg m-auto">
 		   <div class="form-reg-header">
-			   <div class="row">
+			   <div class="row no-gutters">
 							<div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3">
 								<div class="form-reg__logo my-auto">
 									<img src="img/form-reg/form-reg-logo.png" alt="Form registration logo">
@@ -48,9 +52,12 @@
 		   </div>
 		   <!-- /.form-reg-header -->
 		   <div class="form-reg-body">
-		   	<div class="row">
+		   	<div class="row no-gutters">
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-   					<img class="form-login__image" src="img/form-reg/form-reg-login-1.png" alt="You can login here">
+   					<div class="form-login__image">
+   						<img src="img/form-reg/form-reg-login-1-line.png" alt="Картинка">
+   						<img class="form-login__image-circle" src="img/form-reg/form-reg-login-1-circle.png" alt="Картинка">
+   					</div>
 		   		</div>
 		   		<!-- /.col-xl-6 -->
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -85,7 +92,7 @@
 		   								<div class="col-xl-11 col-lg-11 col-md-11 ml-auto">
 		   									<label class="checkbox__label"  for="checkbox">Remember My password</label>
 		   									<div class="checkbox__label-hover">
-		   										<span class="checkbox__label-hover__text">You no longer need to enter a password every time you use the site</span>
+		   										<span class="checkbox__label-hover__text">You no longer need to enter<br/> a password every time you use the site</span>
 		   									</div>
 		   									<!-- /.checkbox__label-hover -->
 		   								</div>
@@ -108,7 +115,7 @@
 		   		<!-- /.col-lg-6 -->
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
 		   			<div class="form-newreg">
-									<span class="form-newreg__subtitle">Email</span>
+									<span class="form-newreg__subtitle form-newreg__subtitle-first">Email</span>
 									<div class="row no-gutters">
 										<div class="form-reg__input-wrap">
 										 <input class="form-reg__input form-reg__input--small"  type="email" placeholder="">
