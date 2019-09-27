@@ -38,8 +38,8 @@
 	
 <section class="s-form">
 	<div class="container">
-		<div class="row no-gutters ">
-			<div class="col-xl-7 col-lg-7 col-md-7 col-sm-10 col-12 m-auto text-right">
+		<div class="row no-gutters">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right">
 				<h1 class="form-title">
    		Login To Your Account / Register New
 	   </h1>
@@ -49,8 +49,8 @@
 		</div>
 		<!-- /.row -->
 		<div class="row  no-gutters">
-			<div class="col-xl-9 col-lg-9 col-md-10 col-sm-11 col-11 m-auto">
-		  <div class="form-reg">
+			<div class="col-xl-12 col-lg-12 col-md-11 col-sm-11 col-11 m-auto">
+		  <div class="form-reg m-auto">
 		   <div class="form-reg-header">
 			   <div class="row">
 							<div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3">
@@ -69,9 +69,12 @@
 		   </div>
 		   <!-- /.form-reg-header -->
 		   <div class="form-reg-body">
-		   	<div class="row">
+		   	<div class="row no-gutters">
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-   					<img class="form-login__image" src="img/form-reg/form-reg-login-1.png" alt="You can login here">
+   					<div class="form-login__image">
+   						<img src="img/form-reg/form-reg-login-1-line.png" alt="Картинка">
+   						<img class="form-login__image-circle" src="img/form-reg/form-reg-login-1-circle.png" alt="Картинка">
+   					</div>
 		   		</div>
 		   		<!-- /.col-xl-6 -->
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
