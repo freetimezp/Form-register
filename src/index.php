@@ -32,6 +32,9 @@
 <!-- main CSS -->
 <link rel="stylesheet" href="css/style.min.css">
 
+<!-- font  -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
 <title>Form-reg</title>
 </head>
 <body>
