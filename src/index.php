@@ -48,14 +48,14 @@
 	   </h1>
   		<!-- /.form-title -->
 			</div>
-			<!-- /.col-xl-7 -->
+			<!-- /.col-xl-12 -->
 		</div>
 		<!-- /.row -->
 		<div class="row  no-gutters">
 			<div class="col-xl-12 col-lg-12 col-md-11 col-sm-11 col-11 m-auto">
 		  <div class="form-reg m-auto">
 		   <div class="form-reg-header">
-			   <div class="row">
+			   <div class="row no-gutters">
 							<div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-3">
 								<div class="form-reg__logo my-auto">
 									<img src="img/form-reg/form-reg-logo.png" alt="Form registration logo">
@@ -176,7 +176,7 @@
 			 </div>
 			 <!-- /.form-reg -->
 			</div>
-			<!-- /.col-xl-9 -->
+			<!-- /.col-xl-12 -->
 		</div>
 		<!-- /.row -->
 	</div>
