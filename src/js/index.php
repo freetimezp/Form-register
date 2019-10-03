@@ -134,7 +134,7 @@
 		   		</div>
 		   		<!-- /.col-lg-6 -->
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-		   			<form class="form-newreg" action="" method="POST">
+		   			<form class="form-newreg" action="" method="POST" id="myForm">
 									<span class="form-newreg__subtitle">Email</span>
 									<div class="row no-gutters">
 										<div class="form-reg__input-wrap">
@@ -190,8 +190,20 @@
 
 <!-- Optional JavaScript -->
 
+<!-- jquery JS -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
 <!-- main JS -->
 <script src="js/script.js" ></script>
+
+<!-- bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- validator JS -->
+<script src="js/validator.min.js"></script>
 
 
 </body>

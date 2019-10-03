@@ -114,11 +114,11 @@
 		   		</div>
 		   		<!-- /.col-lg-6 -->
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-		   			<div class="form-newreg">
-									<span class="form-newreg__subtitle form-newreg__subtitle-first">Email</span>
+		   			<form class="form-newreg" action="" method="POST" id="myForm">
+									<span class="form-newreg__subtitle">Email</span>
 									<div class="row no-gutters">
 										<div class="form-reg__input-wrap">
-										 <input class="form-reg__input form-reg__input--small"  type="email" placeholder="">
+										 <input class="form-reg__input form-reg__input--small" type="email" name="userEmail" placeholder="" required>
 										 <img class="form-reg__input-symbol" src="img/form-reg/form-reg-warning.png" alt="check symbol">
 										</div>
 										<!-- /.form-reg__input-wrap -->
@@ -127,7 +127,7 @@
 		   				<span class="form-newreg__subtitle">User Name</span>
 		   				<div class="row no-gutters">
 										<div class="form-reg__input-wrap">
-										 <input class="form-reg__input form-reg__input--small"  type="name" placeholder="">
+										 <input class="form-reg__input form-reg__input--small" type="name" name="userName" placeholder="" required>
 										 <img class="form-reg__input-symbol" src="img/form-reg/form-reg-checkOk.png" alt="check symbol">
 										</div>
 										<!-- /.form-reg__input-wrap -->
@@ -135,17 +135,17 @@
 		   				<!-- /.row -->
 		   				<span class="form-newreg__subtitle">Password</span>
 		   				<div class="row no-gutters">
-									 <input class="form-reg__input form-reg__input--small"  type="text" placeholder="">
+									 <input class="form-reg__input form-reg__input--small"  type="text" name="userPass" placeholder="" required>
 		   				</div>
 		   				<!-- /.row -->
 			   			<div class="row no-gutters">
 			   				<div class="col-xl-6 col-lg-6 col-md-7 ml-auto">
-			   					<button type="button" name="submit" class="form__button form__button--yellow ml-auto">Register</button>
+			   					<button type="submit" name="submit" class="form__button form__button--yellow ml-auto">Register</button>
 			   				</div>
 			   				<!-- /.col-xl-6 -->
 			   			</div>
 			   			<!-- /.row -->
-		   			</div>
+		   			</form>
 		   			<!-- /.form-newreg -->
 		   		</div>
 		   		<!-- /.col-xl-6 -->
@@ -170,9 +170,20 @@
 
 <!-- Optional JavaScript -->
 
+<!-- jquery JS -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
 <!-- main JS -->
 <script src="js/script.js" ></script>
 
+<!-- bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- validator JS -->
+<script src="js/validator.min.js"></script>
 
 </body>
 </html>
