@@ -134,30 +134,37 @@
 		   		</div>
 		   		<!-- /.col-lg-6 -->
 		   		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-		   			<form class="form-newreg" action="" method="POST" id="myForm">
-									<span class="form-newreg__subtitle">Email</span>
-									<div class="row no-gutters">
-										<div class="form-reg__input-wrap">
-										 <input class="form-reg__input form-reg__input--small" type="email" name="userEmail" placeholder="">
-										 <img class="form-reg__input-symbol" src="img/form-reg/form-reg-warning.png" alt="check symbol">
-										</div>
-										<!-- /.form-reg__input-wrap -->
-		   				</div>
-		   				<!-- /.row -->
-		   				<span class="form-newreg__subtitle">User Name</span>
-		   				<div class="row no-gutters">
-										<div class="form-reg__input-wrap">
-										 <input class="form-reg__input form-reg__input--small" type="name" name="userName" placeholder="">
-										 <img class="form-reg__input-symbol" src="img/form-reg/form-reg-checkOk.png" alt="check symbol">
-										</div>
-										<!-- /.form-reg__input-wrap -->
-		   				</div>
-		   				<!-- /.row -->
-		   				<span class="form-newreg__subtitle">Password</span>
-		   				<div class="row no-gutters">
-									 <input class="form-reg__input form-reg__input--small"  type="text" name="userPass" placeholder="">
-		   				</div>
-		   				<!-- /.row -->
+		   			<form class="form-newreg was-validated" action="" method="POST" id="form">
+									<div class="form-group">	
+										<label class="form-newreg__subtitle" for="formUserEmail">Email</label>
+										<div class="row no-gutters">
+											<div class="form-reg__input-wrap">
+											 <input class="form-reg__input form-reg__input--small form-control" id="formUserEmail" type="email" name="userEmail" placeholder="" required>
+											</div>
+											<!-- /.form-reg__input-wrap -->
+				   			</div>
+				   			<!-- /.row -->
+									</div>
+									<!-- /.form-group -->
+		   				<div class="form-group">
+										<label class="form-newreg__subtitle" for="formUserName">User Name</label>
+			   				<div class="row no-gutters">
+											<div class="form-reg__input-wrap">
+											 <input class="form-reg__input form-reg__input--small form-control" id="formUserName" type="name" name="userName" placeholder="" required>
+											</div>
+											<!-- /.form-reg__input-wrap -->
+			   				</div>
+			   				<!-- /.row -->
+									</div>
+									<!-- /.form-group -->
+		   				<div class="form-group">
+										<label class="form-newreg__subtitle"  for="formUserPassword">Password</label>
+			   				<div class="row no-gutters">
+										 <input class="form-reg__input form-reg__input--small form-control" id="formUserPassword"  type="text" name="userPass" placeholder="" required>
+			   				</div>
+			   				<!-- /.row -->
+									</div>
+									<!-- /.form-group -->
 			   			<div class="row no-gutters">
 			   				<div class="col-xl-6 col-lg-6 col-md-7 ml-auto">
 			   					<button type="submit" name="submit" class="form__button form__button--yellow ml-auto">Register</button>
@@ -196,14 +203,11 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
-<!-- main JS -->
-<script src="js/script.js" ></script>
-
 <!-- bootstrap JS -->
 <script src="js/bootstrap.min.js"></script>
 
-<!-- validator JS -->
-<script src="js/validator.min.js"></script>
+<!-- main JS -->
+<script src="js/script.js" ></script>
 
 
 </body>
